@@ -1,12 +1,11 @@
-double curley brackets are used to hold and evaluate expressions.
+<!--double curley brackets are used to hold and evaluate expressions.
 
 uses:
 create data bindings between our model and view
 easily capture user input
 dynamically write out to html.
 
-how to get started:
-
+-->
 <html ng-app="myApp">
 
 <head>
@@ -18,10 +17,12 @@ how to get started:
 
 <body>
 
-  <div ng-controller="appCtrl">
-
-
-  </div>
+  <div ng-controller="AppCtrl">
+  <p>{{1 + 1}}</p>
+  {{ model.firstName}}
+  <!--{{testFunction()}} -->
+  <input ng-model="testInput" type="text">
+  {{testInput}}
   </div>
 </body>
 
