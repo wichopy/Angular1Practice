@@ -1,0 +1,29 @@
+<!--
+
+Different uses of dot notation
+
+-->
+<html ng-app="myApp">
+
+<head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <title>Dot Not</title>
+
+</head>
+
+<body>
+
+  <div ng-controller="OuterCtrl">
+    {{val1.name}}
+
+    <div ng-controller="InnerCtrl">
+    {{val1.name}}
+    <input type="text" ng-model="val1.name" />
+    </div>
+
+  </div>
+</body>
+
+</html>
+
